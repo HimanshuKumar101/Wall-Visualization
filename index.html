@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Wall Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Wall Visualization</h2>
+
+    <div class="input-row">
+      <div class="input-group">
+        <label for="numWalls">Number of walls:</label>
+        <input type="number" id="numWalls" />
+      </div>
+
+      <div class="input-group">
+        <label for="wallHeight">Height of Walls</label>
+        <input type="text" id="wallHeight" placeholder="(e.g. 10#20#15)" />
+      </div>
+
+      <button onclick="generateWalls()">Submit</button>
+    </div>
+
+    <div id="wallContainer"></div>
+
+    <div class="results-row">
+      <p id="resultLeft"></p>
+      <p id="resultRight"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
